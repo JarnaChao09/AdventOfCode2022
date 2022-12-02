@@ -1,9 +1,7 @@
 package day1
 
-import java.io.File
-
 fun main() {
-    File("./input/day1/input.txt")
+    java.io.File("./input/day1/input.txt")
         .reader()
         .buffered()
         .lineSequence()
