@@ -44,13 +44,6 @@ fun main() {
         }
         return fromLeft * fromRight
     }
-//    """
-//        30373
-//        25512
-//        65332
-//        33549
-//        35390
-//    """.trimIndent()
     java.io.File("./input/day8/input.txt")
         .reader()
         .buffered()
