@@ -44,7 +44,6 @@ fun main() {
             val rope = MutableList(10) {
                 0 to 0
             }
-            cords.add(rope[9])
             for (cord in this) {
                 rope[0] = (rope[0].first + cord.first) to (rope[0].second + cord.second)
                 for (i in 1 until 10) {
