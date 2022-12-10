@@ -31,7 +31,6 @@ fun main() {
                     else -> mod
                 }
                 val pos = values.findSignal(i + 1)
-                println("$i $curr $pos")
                 if (curr in pos..pos + 2) {
                     "#"
                 } else {
