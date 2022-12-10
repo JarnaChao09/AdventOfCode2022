@@ -1,7 +1,7 @@
 package day10
 
 fun main() {
-    fun List<Pair<Int, Int>>.findSignal(n: Int): Int = this.takeWhile { it.first < n }.lastOrNull()?.second ?: 0
+    fun List<Pair<Int, Int>>.findSignal(n: Int): Int = this.takeWhile { it.first < n }.lastOrNull()?.second ?: 1
     java.io.File("./input/day10/input.txt")
         .reader()
         .buffered()
@@ -27,10 +27,11 @@ fun main() {
 
             List(240) { i ->
                 val curr = when (val mod = (i + 1) % 40) {
-                    0 -> 1
+                    0 -> 40
                     else -> mod
                 }
                 val pos = values.findSignal(i + 1)
+                println("$i $curr $pos")
                 if (curr in pos..pos + 2) {
                     "#"
                 } else {
