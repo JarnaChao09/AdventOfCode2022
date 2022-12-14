@@ -90,16 +90,7 @@ fun main() {
             val cy = curr.second
             if (cx == maxX + 2) {
                 part2 += curr
-                if (cx to cy !in part2) {
-                    part2 += cx to cy
-                    break
-                } else if (cx to (cy - 1) !in part2) {
-                    part2 += cx to (cy - 1)
-                    break
-                } else if (cx to (cy + 1) !in part2) {
-                    part2 += cx to (cy + 1)
-                    break
-                }
+                break
             } else if (cx to cy !in part2) {
                 curr = cx to cy
                 continue
