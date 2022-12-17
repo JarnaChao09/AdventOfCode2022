@@ -74,6 +74,7 @@ fun main() {
         }
         return top
     }
+
     fun MutableSet<Pair<Long, Long>>.run2(numRocks: Int, input: List<Char>, shapes: List<List<Pair<Int, Int>>>): Long {
         val occupied = this
         var top = 0L
@@ -145,9 +146,6 @@ fun main() {
 
         return ret
     }
-    """
-        >>><<><>><<<>><>>><<<>>><<<><<<>><>><<>>
-    """.trimIndent()
     java.io.File("./input/day17/input.txt")
         .reader()
         .buffered()
