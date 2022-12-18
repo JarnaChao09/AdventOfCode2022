@@ -90,7 +90,6 @@ fun main() {
                     '<' -> {
                         shape.map { (x, y) ->
                             x - 1 to y
-
                         }
                     }
 
