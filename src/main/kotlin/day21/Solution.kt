@@ -120,7 +120,7 @@ fun inverse(root: Fun, value: Long): Long {
             if ("humn" in root.left) {
                 inverse(root.left, value + root.right.fullEval(emptyMap()))
             } else {
-                inverse(root.right * Const(-1), value - root.left.fullEval(emptyMap()))
+                inverse(root.right, root.left.fullEval(emptyMap()) - value)
             }
         }
 
